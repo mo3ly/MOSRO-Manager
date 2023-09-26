@@ -10,6 +10,33 @@ Welcome to the MOSRO Manager repository! This tool is designed to simplify your 
 
 MOSRO Manager is a comprehensive tool that combines several utilities such as server file management, mob editing, character data editing, and PK2 exploration. It also includes exclusive features like a packet sniffer for parsing, injecting, and scripting custom packets. Additionally, it comes with a simplified database management tool to replace the conventional MSSQL management tools.
 
+
+## 🖼 Screenshots
+
+### Connection & Statistics
+<img src="https://i.epvpimg.com/uz1bbab.jpg" width="400">
+<img src="https://i.epvpimg.com/0cUfbab.jpg" width="400">
+<img src="https://i.epvpimg.com/j0x3cab.jpg" width="400">
+
+### Character & User
+<img src="https://i.epvpimg.com/AJRueab.jpg" width="400">
+<img src="https://i.epvpimg.com/F20tgab.jpg" width="400">
+<img src="https://i.epvpimg.com/DpQofab.jpg" width="400">
+<img src="https://i.epvpimg.com/ryMVfab.jpg" width="400">
+<img src="https://i.epvpimg.com/BLPldab.jpg" width="400">
+
+### Packet Sniffer
+<img src="https://i.epvpimg.com/gdQMbab.jpg" width="400">
+<img src="https://i.epvpimg.com/MjGWbab.jpg" width="400">
+<img src="https://i.epvpimg.com/09JAeab.jpg" width="400">
+
+### Other Tools
+<img src="https://i.epvpimg.com/gN1icab.jpg" width="400">
+<img src="https://i.epvpimg.com/V9sScab.jpg" width="400">
+<img src="https://i.epvpimg.com/OlmWaab.jpg" width="400">
+<img src="https://i.epvpimg.com/LTcKcab.jpg" width="400">
+<img src="https://i.epvpimg.com/e9JOdab.jpg" width="400">
+
 ---
 
 ## 🎯 Features
@@ -56,6 +83,31 @@ MOSRO Manager is a comprehensive tool that combines several utilities such as se
 
 ---
 
+## 🏆 Credits
+
+- (Pushdx) Silkroad Security API
+- (Pushdx) Silkroad Proxy
+- (Florain0) MiniBillingServer
+- (Chernobyl) XFilter
+- (3DProgrammer) SilkroadInformationAPI
+- (DaxturSoul) Packets Docs
+- (JellyBitz) PxBook
+- (Unknown) PK2 Reader
+- (Vitalka) Loader
+- (khaleed2010) SQL Query Support
+- (Artuuro_lv) PVP Query
+
+Special thanks to anyone who has released anything that's being used in this tool.
+
+---
+
+## 🛠 Requirements
+
+- Framework: .Net framework 4.5.2
+- Disk: At least 15 MB
+- Memory: At least 40 MB
+
+---
 
 ## 📝 License
 
