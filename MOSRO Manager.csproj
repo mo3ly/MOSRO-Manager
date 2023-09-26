@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2EAC19D6-683D-4E1E-844B-15639AE01557}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MOSRO_Manager</RootNamespace>
+    <AssemblyName>MOSRO Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormsSyntaxHighlighter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WinFormsSyntaxHighlighter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Interface\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\bAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\bAbout.Designer.cs">
+      <DependentUpon>bAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharInformation.Designer.cs">
+      <DependentUpon>pCharInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharInventory.Designer.cs">
+      <DependentUpon>pCharInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharMain.Designer.cs">
+      <DependentUpon>pCharMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\Characters\pCharStorage.Designer.cs">
+      <DependentUpon>pCharStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pCharacters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pCharacters.Designer.cs">
+      <DependentUpon>pCharacters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pConnection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pConnection.Designer.cs">
+      <DependentUpon>pConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pManagement.Designer.cs">
+      <DependentUpon>pManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pMobEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pMobEditor.Designer.cs">
+      <DependentUpon>pMobEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pNewCharacter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pNewCharacter.Designer.cs">
+      <DependentUpon>pNewCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pNewUser.Designer.cs">
+      <DependentUpon>pNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pPK2Section.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pPK2Section.Designer.cs">
+      <DependentUpon>pPK2Section.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Pages\pStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Pages\pStatistics.Designer.cs">
+      <DependentUpon>pStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\alert.Designer.cs">
+      <DependentUpon>alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\dialog.Designer.cs">
+      <DependentUpon>dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\imagePreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\imagePreview.Designer.cs">
+      <DependentUpon>imagePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\InputBox.cs" />
+    <Compile Include="Interface\Popups\inputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\inputDialog.Designer.cs">
+      <DependentUpon>inputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\message.Designer.cs">
+      <DependentUpon>message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\overlay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\overlay.Designer.cs">
+      <DependentUpon>overlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\textPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Popups\textPreview.Designer.cs">
+      <DependentUpon>textPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Popups\ToolTip.cs" />
+    <Compile Include="Interface\subWindows\Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\subWindows\Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\subWindows\GameManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\subWindows\GameManager.Designer.cs">
+      <DependentUpon>GameManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\subWindows\PacketSniffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\subWindows\PacketSniffer.Designer.cs">
+      <DependentUpon>PacketSniffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\subWindows\QueryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\subWindows\QueryWindow.Designer.cs">
+      <DependentUpon>QueryWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\subWindows\TodoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\subWindows\TodoWindow.Designer.cs">
+      <DependentUpon>TodoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Contollers\ConfigController.cs" />
+    <Compile Include="Logic\Libs\PK2Reader\EntrySet\File.cs" />
+    <Compile Include="Logic\Libs\PK2Reader\EntrySet\Folder.cs" />
+    <Compile Include="Logic\Libs\PK2Reader\PK2Reader.cs" />
+    <Compile Include="Logic\Libs\SRClient\SRClientHelper.cs" />
+    <Compile Include="Logic\Utility\PScriptParser.cs" />
+    <Compile Include="Logic\Contollers\SMCController.cs" />
+    <Compile Include="Logic\Contollers\SQLContoller.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDS.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSCaps.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSCaps2.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSHeader.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSHeaderFlags.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSImageParser.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSPixelFlags.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSPixelFormat.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSReader.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\DDSVariant.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\GDImageLibrary.cs" />
+    <Compile Include="Logic\Libs\ImageLibrary\Texture.cs" />
+    <Compile Include="Logic\Libs\Loader\Loader.cs" />
+    <Compile Include="Logic\Libs\PK2\IO\FileAdapter.cs" />
+    <Compile Include="Logic\Libs\PK2\IO\Stream\Reader.cs" />
+    <Compile Include="Logic\Libs\PK2\IO\Stream\StreamOperation.cs" />
+    <Compile Include="Logic\Libs\PK2\IO\Stream\StreamWorker.cs" />
+    <Compile Include="Logic\Libs\PK2\IO\Stream\Writer.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2Archive.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2Config.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2DirectoryNotFoundException.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2FileNotFoundException.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2Mode.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2Navigator.cs" />
+    <Compile Include="Logic\Libs\PK2\PK2NotLoadedException.cs" />
+    <Compile Include="Logic\Libs\PK2\Security\Blowfish.cs" />
+    <Compile Include="Logic\Libs\PK2\Security\BlowfishSecurityException.cs" />
+    <Compile Include="Logic\Libs\PK2\Security\BlowfishUtilities.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\InvalidBlockException.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\InvalidEntryException.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\InvalidHeaderException.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2Block.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2BlockCollection.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2Directory.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2Entry.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2EntryType.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2File.cs" />
+    <Compile Include="Logic\Libs\PK2\Types\PK2Header.cs" />
+    <Compile Include="Logic\Libs\Proxy\Proxy.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\Blowfish.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\Packet.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\PacketReader.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\PacketWriter.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\Security.cs" />
+    <Compile Include="Logic\Libs\SilkroadSecurity\TransferBuffer.cs" />
+    <Compile Include="Logic\Libs\SRClient\SRClient.cs" />
+    <Compile Include="Logic\Model\Config.cs" />
+    <Compile Include="Logic\Utility\ItemInfo.cs" />
+    <Compile Include="Logic\Utility\SlotDrawer.cs" />
+    <Compile Include="Logic\Utility\StringExtensions.cs" />
+    <Compile Include="Logic\Utility\Utility.cs" />
+    <Compile Include="Logic\Utility\WindowAPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interface\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\bAbout.resx">
+      <DependentUpon>bAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\Characters\pCharInformation.resx">
+      <DependentUpon>pCharInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\Characters\pCharInventory.resx">
+      <DependentUpon>pCharInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\Characters\pCharMain.resx">
+      <DependentUpon>pCharMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\Characters\pCharStorage.resx">
+      <DependentUpon>pCharStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pCharacters.resx">
+      <DependentUpon>pCharacters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pConnection.resx">
+      <DependentUpon>pConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pManagement.resx">
+      <DependentUpon>pManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pMobEditor.resx">
+      <DependentUpon>pMobEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pNewCharacter.resx">
+      <DependentUpon>pNewCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pNewUser.resx">
+      <DependentUpon>pNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pPK2Section.resx">
+      <DependentUpon>pPK2Section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Pages\pStatistics.resx">
+      <DependentUpon>pStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\alert.resx">
+      <DependentUpon>alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\dialog.resx">
+      <DependentUpon>dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\imagePreview.resx">
+      <DependentUpon>imagePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\inputDialog.resx">
+      <DependentUpon>inputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\message.resx">
+      <DependentUpon>message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\overlay.resx">
+      <DependentUpon>overlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Popups\textPreview.resx">
+      <DependentUpon>textPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\subWindows\Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\subWindows\GameManager.resx">
+      <DependentUpon>GameManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\subWindows\PacketSniffer.resx">
+      <DependentUpon>PacketSniffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\subWindows\QueryWindow.resx">
+      <DependentUpon>QueryWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\subWindows\TodoWindow.resx">
+      <DependentUpon>TodoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\subWindows\ClientDesigner\" />
+    <Folder Include="Interface\subWindows\DirectoriesShorcuts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="WinFormsSyntaxHighlighter.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

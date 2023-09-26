@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOSRO Manager", "MOSRO Manager.csproj", "{2EAC19D6-683D-4E1E-844B-15639AE01557}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EAC19D6-683D-4E1E-844B-15639AE01557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAC19D6-683D-4E1E-844B-15639AE01557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAC19D6-683D-4E1E-844B-15639AE01557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAC19D6-683D-4E1E-844B-15639AE01557}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC327D12-2E23-4C67-B3F7-0DD56C3FE910}
+	EndGlobalSection
+EndGlobal
