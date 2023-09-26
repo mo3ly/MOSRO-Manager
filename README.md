@@ -56,11 +56,6 @@ MOSRO Manager is a comprehensive tool that combines several utilities such as se
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions to this project! Feel free to open issues or submit pull requests.
-
----
 
 ## 📝 License
 
