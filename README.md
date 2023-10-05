@@ -14,28 +14,28 @@ MOSRO Manager is a comprehensive tool that combines several utilities such as se
 ## 🖼 Screenshots
 
 ### Connection & Statistics
-<img src="https://i.epvpimg.com/uz1bbab.jpg" width="400">
-<img src="https://i.epvpimg.com/0cUfbab.jpg" width="400">
-<img src="https://i.epvpimg.com/j0x3cab.jpg" width="400">
+<img src="https://i.epvpimg.com/uz1bbab.jpg" width="800">
+<img src="https://i.epvpimg.com/0cUfbab.jpg" width="800">
+<img src="https://i.epvpimg.com/j0x3cab.jpg" width="800">
 
 ### Character & User
-<img src="https://i.epvpimg.com/AJRueab.jpg" width="400">
-<img src="https://i.epvpimg.com/F20tgab.jpg" width="400">
-<img src="https://i.epvpimg.com/DpQofab.jpg" width="400">
-<img src="https://i.epvpimg.com/ryMVfab.jpg" width="400">
-<img src="https://i.epvpimg.com/BLPldab.jpg" width="400">
+<img src="https://i.epvpimg.com/AJRueab.jpg" width="800">
+<img src="https://i.epvpimg.com/F20tgab.jpg" width="800">
+<img src="https://i.epvpimg.com/DpQofab.jpg" width="800">
+<img src="https://i.epvpimg.com/ryMVfab.jpg" width="800">
+<img src="https://i.epvpimg.com/BLPldab.jpg" width="800">
 
 ### Packet Sniffer
-<img src="https://i.epvpimg.com/gdQMbab.jpg" width="400">
-<img src="https://i.epvpimg.com/MjGWbab.jpg" width="400">
-<img src="https://i.epvpimg.com/09JAeab.jpg" width="400">
+<img src="https://i.epvpimg.com/gdQMbab.jpg" width="800">
+<img src="https://i.epvpimg.com/MjGWbab.jpg" width="800">
+<img src="https://i.epvpimg.com/09JAeab.jpg" width="800">
 
 ### Other Tools
-<img src="https://i.epvpimg.com/gN1icab.jpg" width="400">
-<img src="https://i.epvpimg.com/V9sScab.jpg" width="400">
-<img src="https://i.epvpimg.com/OlmWaab.jpg" width="400">
-<img src="https://i.epvpimg.com/LTcKcab.jpg" width="400">
-<img src="https://i.epvpimg.com/e9JOdab.jpg" width="400">
+<img src="https://i.epvpimg.com/gN1icab.jpg" width="800">
+<img src="https://i.epvpimg.com/V9sScab.jpg" width="800">
+<img src="https://i.epvpimg.com/OlmWaab.jpg" width="800">
+<img src="https://i.epvpimg.com/LTcKcab.jpg" width="800">
+<img src="https://i.epvpimg.com/e9JOdab.jpg" width="800">
 
 ---
 
